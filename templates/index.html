@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Emotion Detection System - Analyze emotions from text in real-time using NLP.">
+    <meta name="keywords" content="Emotion Detection, NLP, Sentiment Analysis, AI, Machine Learning">
+    <meta name="author" content="Your Name">
+
+    <title>Emotion Detection</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='favicon.png') }}">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Linking -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<!-- Chart.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<body class="index_body">
+    <div class="wrapper">
+  
+    
+    <!-- Header Start -->
+    <header>
+        <div class="navbar">
+            <a href="welcome.html" class="logo" aria-label="Emotion Detector Home">Emotion Detector</a>
+            <ul class="nav-links">
+                <li><a href="welcome.html">Home</a></li>
+                <li><a href="index.html">Analyze</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="feature.html">Features</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Emotion Detection System</h1>
+
+        <!-- Text Input Area -->
+        <div class="display_container">
+            <textarea placeholder="Enter your text here..." class="display" id="textInput" aria-label="Enter text for emotion detection"></textarea>
+            <button id="analyzeButton" title="Click to analyze emotion">
+                <span id="copyMsg"></span> Analyze Emotion
+            </button>
+        </div>
+    </div>
+
+    <!-- Output Display -->
+<div class="emotion_display">
+    <div class="output_card">
+        <p id="emotionResult">
+            Detected Emotion: 
+            <span id="emotionOutput"></span>
+        </p>
+
+
+
+
+        <div class="emotion_chart">
+            <canvas id="emotionChart" width="400" height="300"></canvas>
+        </div>
+        
+    </div>
+
+    <!-- Bar Chart Container (keep only one) -->
+    <div class="graph_area" style="margin-top: 20px;">
+        <canvas id="emotionChart" width="400" height="300"></canvas>
+    </div>
+</div>
+
+
+    <!-- Footer Start -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Emotion Detection System. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Feedback Button -->
+    <button class="toggle-button" id="toggleFeedback" title="Click to provide feedback">Give Feedback</button>
+
+    <!-- JavaScript Logic -->
+    <script src="{{ url_for('static', filename='logics.js') }}"></script>
+</body>
+</html>

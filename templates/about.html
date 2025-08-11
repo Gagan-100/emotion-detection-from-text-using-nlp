@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Emotion Detection System</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}">
+    
+    <!-- css code linking -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+
+<body class="about_body">
+
+    <!-- header start -->
+
+    <header>
+        <div class="navbar">
+            <a href="welcome.html" class="logo">Emotion Detector</a>
+            <ul class="nav-links">
+                <li><a href="welcome.html">Home</a></li>
+                <li><a href="index.html">Analyze</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="feature.html">Features</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- header end -->
+
+
+    <main>
+        <section class="about-section">
+            <h1 style="color: #007bff; font-size: 40px; text-align: center;">About Us</h1><br>
+
+            <h2 class="project_overview">Project Overview</h2>
+            <p class="about_technology">
+                The Emotion Detection System is designed to analyze text input and identify the emotions expressed within it using Natural Language Processing (NLP) techniques. This project aims to enhance user interaction by providing insights into emotional content.
+            </p>
+
+            <h2 class="project_overview">Technology Used</h2>
+            <ul class="about_technology">
+                <li>BERT (Bidirectional Encoder Representations from Transformers) stands as an open-source machine learning framework designed for the natural language processing (NLP)</li>
+                <li>Natural Language Processing (NLP)</li>
+                <li>Python for backend processing and flask use as a framework</li>
+                <li>HTML, CSS, and JavaScript for front-end development</li>
+                <li>Machine Learning algorithms for emotion classification</li>
+                <li>Kaggle datasets for training and testing</li>
+            </ul>
+
+            <h2 class="project_overview" >How It Works</h2>
+            <p class="about_technology">
+                <!-- Users input their text into the system, which is then processed by NLP techniques to analyze the sentiment and emotions conveyed. The system uses a machine learning model that is Support Vector Machines (SVM) trained on a labeled dataset to classify emotions such as happiness, sadness, anger, surprise, and more. The result is displayed back to the user, providing them with valuable feedback on their emotional expression. -->
+
+                <p style="color: #555;">
+                    <ul>
+                        <li> <strong style="color: #555555;">User Text Input:</strong> The user types some text, like a message or comment, into the system. <br> <br></li>
+                        <li> <strong style="color: #555555;">NLP Analysis:</strong> The text is processed with Natural Language Processing (NLP), helping the system understand the language, separate words, and remove unnecessary parts like filler words (e.g., "the," "and"). This prepares the text for analysis. <br> <br></li>
+                        <li> <strong style="color: #555555;">Emotion Classification Using bert model:</strong> , trained on a labeled dataset, categorizes the emotion in the user's text, such as happiness, sadness, anger, etc. <br> <br></li>
+                        <li> <strong style="color: #555555;">Displaying Results:</strong> The detected emotion(s) is shown to the user, giving instant feedback on the emotional tone of the text they entered. <br> <br></li>
+                    </ul>
+                </p>
+                
+
+            </p>
+
+            <h2 class="project_overview">Future Enhancements</h2>
+            <p class="about_technology">
+                <!-- Future versions of this project will include more advanced emotion detection capabilities, This might include complex algorithms or deeper machine learning models that recognize subtle emotions or mixed feelings more accurately., integration with social media platforms By linking with social media, the project could analyze real-time emotional trends by analysing user comments, and real-time feedback mechanisms and A bar graph visualization would represent detected emotions visually, making it easier for users to see which emotions are most prevalent in the analyzed text. We aim to continuously improve the accuracy of emotion recognition through ongoing research and user feedback. -->
+
+                <ul style="list-style-type: disc; ">
+                    <li style="color: #555;"><strong style="color: #555555;">Advanced Emotion Detection</strong>: Future improvements will use complex algorithms to detect subtle or mixed emotions with higher accuracy.</li> <br>
+                    <li style="color: #555;"><strong style="color: #555555;">Social Media Integration</strong>: The project could connect to social platforms, analyzing comments to identify real-time emotional trends.</li> <br>
+                    <li style="color: #555;"><strong style="color: #555555;">Real-Time Feedback</strong>: Users will get instant responses, creating a more interactive and engaging experience.</li> <br>
+                    <!-- <li style="color: #555;"><strong style="color: #555555;">Bar Graph Visualization</strong>: Detected emotions will be displayed in a bar graph, making it easier for users to see which emotions dominate the analyzed text.</li> <br> -->
+                    <li style="color: #555;"><strong style="color: #555555;">Continuous Improvement</strong>: Enhancements will rely on ongoing research and feedback to refine emotion recognition accuracy.</li> <br>
+                </ul>
+                
+
+            </p>
+        </section>
+    </main>
+
+
+    <!-- our team code start -->
+
+
+    
+    <!-- <section class="team-section"> -->
+        <!-- <h2 class="our_member">Our Members</h2> -->
+        <!-- <div class="team-container"> -->
+            <!-- <div class="team-member"> -->
+                <!-- <img src="gagan.jpg" alt="Gagan" class="team-image"> -->
+                <!-- <h3 class="name">Gagan</h3> -->
+                <!-- <p class="project_position1">Role: Frontend Developer</p> -->
+                <!-- <p class="project_position" >Gagan is involve in the user interface design. As well as Backend.</p> -->
+            <!-- </div> -->
+            <!-- <div class="team-member"> -->
+                <!-- <img src="imtiyaz.jpg" alt="Imtiyaz" class="team-image"> -->
+                <!-- <h3 class="name">Imtiyaz</h3> -->
+                <!-- <p class="project_position1">Role: Backend Developer</p> -->
+                <!-- <p class="project_position">Imtiyaz involves in data analysis as well as some part of UI.</p> -->
+            <!-- </div> -->
+            <!-- <div class="team-member"> -->
+                <!-- <img src="rohan.jpg" alt="Rohan" class="team-image"> -->
+                <!-- <h3 class="name">Rohan</h3> -->
+                <!-- <p class="project_position1">Role: Frontend Developer</p> -->
+                <!-- <p class="project_position">Rohan is involve in Frontend, As well as worked in Backend.</p> -->
+            <!-- </div> -->
+        <!-- </div> -->
+    <!-- </section> -->
+
+    <!-- our team code end -->
+
+
+    <!-- footer start -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Emotion Detection System. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+
+</body>
+</html>

@@ -24,12 +24,5 @@ Predicted emotions are visualized in an interactive **Chart.js** bar chart.
 - **NLP Model:** BERT
 - **Other Libraries:** Torch, NumPy, Pandas
 
----
 
-## 📂 Project Structure
-emotion-detection/
-│
-├── static/ # CSS, JS, images
-├── templates/ # HTML files
-├── app.py # Flask backend
-└── README.md
+

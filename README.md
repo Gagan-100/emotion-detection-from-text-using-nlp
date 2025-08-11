@@ -5,6 +5,8 @@ A web-based application that detects emotions from user-input text using a fine-
 The frontend is built with **HTML, CSS, and JavaScript**, while the backend uses **Flask** to serve the NLP predictions.  
 Predicted emotions are visualized in an interactive **Chart.js** bar chart.
 
+![image alt](https://github.com/Gagan-100/emotion-detection-from-text-using-nlp/blob/d8be0b218ed8af4f0905ae936403bf364e505cb7/emotion%20detection%20.png)
+
 ---
 
 ## 🚀 Features
